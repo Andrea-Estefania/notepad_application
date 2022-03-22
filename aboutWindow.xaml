@@ -1,0 +1,22 @@
+﻿<Window x:Class="A02___WPF.aboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A02___WPF"
+        mc:Ignorable="d"
+        Title="About Andrea's Notepad" Height="338.147" Width="639.81" ResizeMode="NoResize" Icon="notepad.ico">
+    <Grid Margin="0,0,2,47">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="641*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="87" Margin="117,10,0,0" VerticalAlignment="Top" Width="402" Source="Windows_10_Logo.svg.png"/>
+        <Border BorderBrush="Black" BorderThickness="0" HorizontalAlignment="Left" Height="151" Margin="82,102,0,0" VerticalAlignment="Top" Width="489">
+            <Label x:Name="border" Content="PROG2121 - Windows and Mobile Programming © Andrea Ferro. Assignment #2&#xA;&#xA;The Windows 10 Home operating system and its user interface are protected by &#xA;trademark and other pending or existing intellectual property rights in the United &#xA;States and other countries/regions.&#xA;&#xD;&#xA;It is based on the functionalities of the Windows Notepad application. The application&#xD;&#xA;allows the user create, save and open text files.&#xA;&#xA;"/>
+        </Border>
+        <Button x:Name="okClose" Content="OK" HorizontalAlignment="Left" Height="26" Margin="271,253,0,-36" VerticalAlignment="Top" Width="90" Click="okClose_Click"/>
+    </Grid>
+</Window>
